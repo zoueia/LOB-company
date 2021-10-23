@@ -1,0 +1,21 @@
+#customers{
+    padding: 0px 19.65rem 5rem 19.65rem;
+    @media( max-width: 1550px ){
+        padding: 0px 11vw 5rem 11vw;
+    }
+    ul{
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        @media( max-width: 1550px ){
+            flex-wrap: wrap;
+        }
+        li{
+            margin: 0px 1.75rem;
+            img{ width: 16.7rem;}
+            @media( max-width: 1550px ){
+                margin: 0px .5vw;
+            }
+        }
+    }
+}

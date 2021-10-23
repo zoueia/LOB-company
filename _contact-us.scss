@@ -1,0 +1,59 @@
+#contact-us{
+    margin: 20rem 17.8vw 15rem 17.8vw;
+    padding: 10rem 1rem;
+    background-color: #162542;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60.6vw;
+    border-radius: 2rem;
+    background-image: url('./bg-00.png');
+    background-position: right 70%;
+    color: white;
+    @media( max-width: 750px ){
+        padding: 5rem 1rem;
+        margin: 20rem 0vw 15rem 0vw;
+        width: 95%;
+        margin: 20rem 1vw 15rem 1vw;
+        background-image: none;
+        background-color: #F3F3F3;
+        border-radius: 0px;
+    }
+    h3{ padding: .5rem 3rem; border-left: 3px solid #D2A76B; border-right: 3px solid #D2A76B; background-color: rgba(255, 255, 255, 0.15); color: #D2A76B;}
+    h1{ padding: 1.5rem 0 5.4rem 0; }
+    input{ margin: 3rem;  width: 22vw ; padding: 2rem 2vw; border-radius: 1rem; border: none; background-color: #1F2C47 ; color: white;}
+    input:focus{ border: 1px solid #D2A76B; outline: none; }
+    input::placeholder{  color: rgb(182, 182, 182); position: absolute; right: 20px; filter: opacity(50%) grayscale(100%);}
+    .message{display: flex;}
+    .group-one{
+        display: flex;
+        flex-direction: column;
+    }
+    .groub-two{
+        display: flex;
+        flex-direction: column;
+        input:last-child{
+            flex-grow: 1;
+        }
+    }
+    .send{
+        background-color: transparent;
+        border: 0px;
+        padding: 1.3rem 6rem;
+        background-color: #D2A76B;
+        border-radius: 50px;
+        margin: 1.5rem;
+        color: white;
+    }
+    .name{ &::placeholder{background-image: url('./iconfinder_2202250_account_avatar_human_man_profile_icon\(1\).png'); background-repeat: no-repeat; padding: 5px; background-position: right;}}
+    .email{ &::placeholder{background-image: url('./Group\ 16850.png'); background-repeat: no-repeat; padding: 5px; background-position: right;} } 
+    .number{ &::placeholder{background-image: url('./Group\ 16851.png'); background-repeat: no-repeat; padding: 5px; background-position: right;} } 
+    img{ position: absolute; right: -18.9vw; z-index: -1; top: -100px;}
+    @media( max-width: 750px ){
+        .message{display: flex; flex-direction: column;}
+        input{ margin: 1.5rem;  width: 70vw; background-color: transparent; border: 1px solid #c0c0c0}
+        img{ display: none; }
+        h1{ color: #162542; padding: 1.5rem 0 2rem 0; }
+        h3{ background-color: rgba(255, 255, 255, 0.432);}
+    }
+}
